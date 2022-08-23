@@ -1,0 +1,36 @@
+.modal-menu {
+  display: none;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  z-index: 1000;
+
+  height: 796px;
+  width: 100%;
+
+  margin-left: auto;
+  margin-top: auto;
+
+  background-color: var(--m-bcg-col);
+
+  .contacts,
+  .navigation_modal-menu {
+    display: block;
+  }
+}
+
+.is-open {
+  &.modal-menu {
+    display: block;
+  }
+}
+
+.modal-menu__container {
+  position: relative;
+}
+
+.modal-menu__close-button {
+  position: absolute;
+  top: 10px;
+  right: 6px;
+}

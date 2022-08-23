@@ -1,19 +1,39 @@
 // mobile
 
-// начь отсюда, тут лажа
-.header {
-  width: 100%;
-  max-width: 480px;
-  padding: 16px 0px;
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+* {
+  outline: rgb(187, 55, 187) solid 1px;
 }
 
-.header__modal-menu {
-  display: none;
+.header {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  border-bottom: 1px solid var(--header-border-col);
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    position: relative;
+    height: 60px;
+    padding: 16px 0px;
+
+    .header__container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+
+      width: 100%;
+    }
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .contacts {
+    display: none;
+  }
 }
 
 // .header {
