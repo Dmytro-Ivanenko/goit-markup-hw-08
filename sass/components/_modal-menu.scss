@@ -1,18 +1,24 @@
 .modal-menu {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+
   top: 0px;
   left: 0px;
   position: fixed;
   z-index: 1000;
+  pointer-events: none;
 
   height: 796px;
-  width: 100%;
+  width: 100vw;
 
   margin-left: auto;
   margin-top: auto;
 
   background-color: var(--m-bcg-col);
 
+  @extend %animation;
+
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   .contacts,
   .navigation_modal-menu {
     display: block;
@@ -21,16 +27,78 @@
 
 .is-open {
   &.modal-menu {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 }
 
 .modal-menu__container {
   position: relative;
+  padding: 48px 40px;
+  width: 100vw;
+  height: 100%;
 }
 
 .modal-menu__close-button {
   position: absolute;
   top: 10px;
-  right: 6px;
+  right: 15px;
+}
+
+.navigation_modal-menu {
+  font-weight: 500;
+  @include font-line(40px, 47px);
+  text-align: left;
+  letter-spacing: 0.02em;
+}
+
+.navigation__item_modal {
+  margin-bottom: 32px;
+  &:last-child {
+    margin-bottom: 38vh;
+  }
+}
+
+.contacts__item_mobile {
+  margin-bottom: 32px;
+
+  font-weight: 500;
+  @include font-line(24px, 28px);
+  letter-spacing: 0.02em;
+
+  &:last-child {
+    margin-bottom: 62px;
+  }
+}
+
+.contacts__tel_acc {
+  color: var(--acc-col);
+}
+
+.modal-menu__social-network-list {
+  display: flex;
+}
+
+.modal-menu__social-network-item {
+  padding: 0px 10px;
+
+  &:first-child {
+    padding-left: 0px;
+  }
+
+  &:last-child {
+    padding-right: 0px;
+  }
+
+  &:not(:last-child) {
+    border-right: 1px solid var(--modal-border-col);
+  }
+}
+
+.modal-menu__social-network-link {
+  font-weight: 500;
+  @include font-line(18px, 22px);
+  letter-spacing: 0.02em;
+  color: var(--acc-col);
 }
