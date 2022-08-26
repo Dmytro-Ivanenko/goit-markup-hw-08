@@ -48,6 +48,13 @@
   position: absolute;
   top: 15px;
   right: 15px;
+
+  @extend %animation;
+
+  &:hover,
+  &:focus {
+    fill: var(--acc-col);
+  }
 }
 
 .navigation_modal-menu {
