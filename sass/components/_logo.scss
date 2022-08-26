@@ -21,14 +21,14 @@
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .logo {
     @include font-line(24px, 28.18px);
   }
 }
 
 // desktop
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .logo {
     @include font-line(26px, 35.96px);
   }
