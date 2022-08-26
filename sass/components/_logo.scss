@@ -25,6 +25,9 @@
   .logo {
     @include font-line(24px, 28.18px);
   }
+  .footer__logo {
+    justify-content: center;
+  }
 }
 
 // desktop

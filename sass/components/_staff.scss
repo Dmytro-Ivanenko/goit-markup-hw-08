@@ -8,6 +8,7 @@
 .staff__item {
   display: block;
   width: 100%;
+  padding-bottom: 24px;
 
   background-color: var(--m-bcg-col);
   border-radius: 0px 0px 4px 4px;
@@ -71,7 +72,6 @@
 @media screen and (max-width: 767px) {
   .staff__item {
     max-width: 450px;
-    padding-bottom: 24px;
 
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -89,7 +89,6 @@
 
   .staff__item {
     max-width: 354px;
-    padding-bottom: 0px;
   }
 }
 
@@ -97,5 +96,6 @@
 @media screen and (min-width: 1200px) {
   .staff__item {
     max-width: 270px;
+    padding-bottom: 30px;
   }
 }

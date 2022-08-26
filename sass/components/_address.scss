@@ -1,21 +1,45 @@
-// .address-info__item {
-//   &:not(:last-child) {
-//     margin-bottom: 9px;
-//   }
-// }
+.footer__logo,
+.address-info__data {
+  color: var(--logo-f-col);
+}
 
-// .footer__logo,
-// .address-info__data {
-//   color: var(--logo-f-col);
-// }
+.address-info__list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
 
-// .address-info__list {
-//   font-style: normal;
-//   font-size: 14px;
-//   line-height: 1.7;
-//   letter-spacing: 0.03em;
-// }
+.address-info__data_contact {
+  color: var(--foot-alph-col);
+}
 
-// .address-info__data_contact {
-//   color: var(--foot-alph-col);
-// }
+// phone
+@media screen and (max-width: 767px) {
+  .address-info {
+    margin-bottom: 60px;
+  }
+}
+
+// tablet
+@media screen and (max-width: 1199px) {
+  .address-info__item {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+// Desktop
+
+@media screen and (min-width: 1200px) {
+  .address-info {
+    width: 231px;
+  }
+
+  .address-info__item {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+}

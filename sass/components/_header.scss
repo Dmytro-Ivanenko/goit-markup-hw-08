@@ -1,6 +1,6 @@
-* {
-  outline: rgb(187, 55, 187) solid 1px;
-}
+// * {
+//   outline: rgb(187, 55, 187) solid 1px;
+// }
 
 .header {
   width: 100%;
@@ -30,6 +30,13 @@
   @extend %animation;
   line-height: 0px;
 }
+
+.contacts__tel,
+.contacts__mail {
+  color: var(--alt-col);
+  fill: var(--alt-col);
+}
+
 // Mobile
 @media screen and (max-width: 767px) {
   .header {
@@ -93,7 +100,7 @@
     &::after {
       display: block;
       position: absolute;
-      bottom: -32px;
+      bottom: -31px;
 
       width: 100%;
       height: 4px;
@@ -109,7 +116,6 @@
 
     @include font-line(12px, 14px);
     letter-spacing: 0.02em;
-    color: var(--alt-col);
   }
 
   .contacts__item {
@@ -142,6 +148,7 @@
   .contacts {
     display: flex;
     align-items: center;
+    gap: 30px;
 
     @include font-line(14px, 16.4px);
     letter-spacing: 0.02em;
