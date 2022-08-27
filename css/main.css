@@ -1067,6 +1067,10 @@ button {
   border-radius: 4px;
 }
 
+.modal-active-page {
+  color: var(--acc-col);
+}
+
 @media screen and (max-width: 1199px) {
   .modal {
     width: 100%;
