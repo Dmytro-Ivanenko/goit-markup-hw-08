@@ -172,7 +172,7 @@ button {
   .header {
     position: relative;
     height: 60px;
-    padding: 16px 0px;
+    padding: 10px 0px;
   }
   .header__container {
     flex-wrap: wrap;
@@ -1008,7 +1008,7 @@ button {
   .card-list__item {
     width: 100%;
     max-width: 450px;
-    height: 404px;
+    max-height: 404px;
   }
   .card__overlay {
     padding: 77px 24px;
